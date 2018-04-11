@@ -92,7 +92,7 @@ public final class OGDataProvider: NSObject {
         OGDataCacheManager.shared.delete(ogData, completion: completion)
     }
     
-    func cancelLoad(_ uuidString: String, stopTask: Bool) {
+    public func cancelLoad(_ uuidString: String, stopTask: Bool) {
         session.cancelLoad(withUUIDString: uuidString, stopTask: stopTask)
     }
 }
